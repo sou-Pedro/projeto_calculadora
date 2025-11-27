@@ -1,15 +1,27 @@
 package calculadora; 
 
 public class TesteCalculadora {
+
+
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
 
-        // Testes
-        calc.calc(2, 3, "+"); 
-        calc.calc(10, 4, "-");
-        calc.calc(3, 5, "*"); 
-        calc.calc(8, 2, "/"); 
-        calc.calc(8, 0, "/"); 
-        calc.calc(5, 5, "x"); 
+        System.out.println(calc.calcular(2, 3, "+")); // 5
+        System.out.println(calc.calcular(10, 4, "-")); // 6
+        System.out.println(calc.calcular(3, 5, "*")); // 15
+        System.out.println(calc.calcular(8, 2, "/")); // 4
+
+        try {
+            System.out.println(calc.calcular(8, 0, "/")); // Exceção
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }   
+
+        try {
+            System.out.println(calc.calcular(5, 5, "x")); // Exceção
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }
