@@ -1,8 +1,28 @@
-package calculadora; 
+package calculadora;
 
+/**
+ * Classe de teste para a Calculadora.
+ * Demonstra o uso dos métodos da calculadora com exemplos de operações válidas e tratamento de exceções.
+ *
+ * @author Pedro
+ * @version 1.0
+ * @since 2025
+ */
 public class TesteCalculadora {
 
+    /**
+     * Construtor padrão da classe TesteCalculadora.
+     * Classe utilitária com método main para testes.
+     */
+    public TesteCalculadora() {
+        // Construtor padrão
+    }
 
+    /**
+     * Método principal que executa os testes da calculadora.
+     * Realiza operações aritméticas válidas e demonstra o tratamento de exceções para casos de erro.
+     * @param args argumentos da linha de comando (não utilizados)
+     */
     public static void main(String[] args) {
         Calculadora calc = new Calculadora();
 
